@@ -12,7 +12,7 @@ ask you if you want to create a connection with the service that you specify, if
 There is file named **config.json**, there are variables in that file which the script uses, like server address. You need to change the **<your site>** to Whatever your site URL is.
   
   ## How to run
-  1. Download the files
+  1. Download the Lates file from Releases
   
   2. Change variables in **config.json** if needed
   
