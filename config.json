@@ -1,0 +1,6 @@
+{
+    "site": "<your site>",
+    "cloudflare_URL": "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe",
+    "cloudflare_download": "C:/Cloudflared/cloudflared.exe",
+    "cloudflare_directory": "C:/Cloudflared/"
+}
