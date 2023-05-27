@@ -1,8 +1,9 @@
 $config = Get-Content -Raw -Path "./config.json" | ConvertFrom-Json
 
 Write-Host "Site: $($config.site)"
+$service = (Read-Host -Prompt "Select service (RDP, TCP)").ToLower()
 $hostname = $($config.site)
-$command = "cloudflared access rdp --hostname $hostname --url rdp://localhost:3389"
+$command = "cloudflared access rdp --hostname $hostname --url $($service)://localhost:3389"
 function Clouflared_run {
     Set-Location $($config.cloudflare_directory)
     Start-Process -FilePath 'cmd.exe' -ArgumentList '/c', $command  -NoNewWindow -Wait
